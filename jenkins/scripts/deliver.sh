@@ -23,5 +23,6 @@ set +x
 echo 'The following command runs and outputs the execution of your Java'
 echo 'application (which Jenkins built using Maven) located in the source directory.'
 set -x
-java -cp src/main/java/com/mycompany/app/App.java
+javac src/main/java/com/mycompany/app/App.java
+java -cp src/main/java com.mycompany.app.App
 set +x
